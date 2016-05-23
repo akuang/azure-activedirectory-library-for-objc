@@ -80,6 +80,7 @@ NSString *const AD_FAILED_NO_CONTROLLER = @"The Application does not have a curr
     [rootView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
     UIWebView* webView = [[UIWebView alloc] initWithFrame:rootView.frame];
     [webView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+    [webView setScalesPageToFit:YES];
     [webView setDelegate:self];
     [rootView addSubview:webView];
     _webView = webView;
